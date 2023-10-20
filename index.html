@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+    <!-- Tailwind and Daisy UI cnd -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind custom CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'buttonBG': '#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <style>
+        .lato-font {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container mx-auto lg:px-28">
+
+        <!-- Nevigation Bar -->
+
+        <div class="navbar bg-base-100 py-10">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="text-base capitalize hover:bg-buttonBG rounded-md"><a
+                                class="hover:text-white poppins-font">Home</a> </li>
+                        <li class="text-base capitalize hover:bg-buttonBG rounded-md"><a
+                                class="hover:text-white poppins-font">Services <i
+                                    class="fa-solid fa-chevron-right text-iconColor text-sm hover:text-white"></i></a>
+                        </li>
+                        <li class="text-base capitalize hover:bg-buttonBG rounded-md"><a
+                                class="hover:text-white poppins-font">Cases
+                                <i class="fa-solid fa-chevron-right text-iconColor text-sm hover:text-white"></i></a>
+                        </li>
+                        <li class="text-base capitalize hover:bg-buttonBG rounded-md"><a
+                                class="hover:text-white poppins-font">Blog
+                                <i class="fa-solid fa-chevron-right text-iconColor text-sm hover:text-white"></i></a>
+                        </li>
+                        <li class="text-base capitalize hover:bg-buttonBG rounded-md"><a
+                                class="hover:text-white poppins-font">Contact Us <i
+                                    class="fa-solid fa-chevron-right text-iconColor text-sm hover:text-white"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn bg-transparent border-none hover:bg-transparent text-xl p-0"><img src="images/logo2.png"
+                        alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-base capitalize hover:bg-buttonBG rounded-md"><a
+                            class="hover:text-white poppins-font">Home</a>
+                    </li>
+                    <li class="text-base capitalize hover:bg-buttonBG rounded-md"><a
+                            class="hover:text-white poppins-font">Services
+                            <i class="fa-solid fa-chevron-right text-iconColor text-sm hover:text-white "></i></a>
+                    </li>
+                    <li class="text-base capitalize hover:bg-buttonBG rounded-md"><a
+                            class="hover:text-white poppins-font">Cases <i
+                                class="fa-solid fa-chevron-right text-iconColor text-sm hover:text-white "></i></a>
+                    </li>
+                    <li class="text-base capitalize hover:bg-buttonBG rounded-md"><a
+                            class="hover:text-white poppins-font">Blog <i
+                                class="fa-solid fa-chevron-right text-iconColor text-sm hover:text-white "></i></a>
+                    </li>
+                    <li class="text-base capitalize hover:bg-buttonBG rounded-md"><a
+                            class="hover:text-white poppins-font">Contact Us
+                            <i class="fa-solid fa-chevron-right text-iconColor text-sm hover:text-white"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a
+                    class="btn hover:bg-titleColor hover:text-white bg-buttonBG text-white lg:py-8 content-center lg:px-8 text-base font-semibold capitalize poppins-font">Free
+                    Consultation</a>
+            </div>
+        </div>
+
+        <!-- Hero -->
+
+        <div class="grid w-full content-center items-center bg-cover bg-center bg-transparent min-h-[78vh] rounded-lg bg-no-repeat py-28 lg:px-0"
+            style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/banner.png');">
+            <div class="">
+                <div class="hero-content text-center text-neutral-content max-w-full">
+                    <div class="max-w-2xl">
+                        <h1
+                            class="mb-5 text-5xl lg:text-7xl text-white font-bold eg-font lg:leading-tight leading-tight">
+                            We Provide
+                            Effective
+                            Legal Solutions</h1>
+                        <p class="mb-5 text-[#E7E7E7] poppins-font leading-loose">There are many variations of passages
+                            of Lorem Ipsum available, but the majority
+                            have suffered alteration in some form, by injected humour.</p>
+                        <div class="space-y-4 lg:space-x-4 rounded-lg">
+                            <input class="input input-bordered w-full lg:w-3/4 join-item py-7"
+                                placeholder="Search your services" />
+                            <button
+                                class="btn hover:bg-titleColor hover:text-white px-10 py-[29px] bg-buttonBG text-white border-none items-center content-center capitalize font-semibold text-lg lg:w-1/5 w-full">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container mx-auto lg:px-28">
+
+
+
+    </main>
+</body>
+
+</html>
